@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export class HungryBear {
 
   constructor(name) {
@@ -12,15 +14,37 @@ export class HungryBear {
   }
 
   didYouGetEaten() {
-    if (this.foodLevel > 0) {
-      return false;
-    } else {
+    if (this.foodLevel < 0) {
       return true;
+    } else {
+      return false;
     }
   }
 
   feed() {
     this.foodLevel = 10;
   }
+
+  displayResults() {
+    if (!this.didYouGetEaten()) {
+      $("#food").text(this.foodLevel);
+    } else if (this.didYouGetEaten() == true) {
+      $("#dead").text(`${this.name} is dead!!!`);
+    } else {
+      $("#dead").text(`oh no`);   // undefined
+    }
+  }
+
+  refreshPage() {
+    setInterval(() => {
+      this.displayResults();
+    }, 1000)
+  }
+
+  // pauseGame() {
+  //   setTimeout(() => {
+  //     this.displayResults();
+  //   }, 25000);
+  // }
 
 }
