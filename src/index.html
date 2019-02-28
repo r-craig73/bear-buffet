@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Bear Buffet</title>
   </head>
   <body>
-    <div class='container'>
-      <h1>Bear Buffet: Fead the bear or else!</h1>
+  <div class='container'>
+    <div class="jumbotron">
+      <h2>Bear Buffet: Fead the bear or a bigger bear will eat you!</h2>
+      <hr class="my-4">
+      <form id="name-form">
+      <label for="name">What is your name?</label>
+      <input id="name" type="text">
+      <button type="submit" class="btn btn-primary">Start Game</button>
+      </form>
+      <br>
+      <div class="game">
+        <div class="row">
+        <h1><span id="bear-name"></span></h1>
+        </div>
+        <div class="row">
+        <h3>Food: <span id="food"></span></h3>
+        </div>
+        <div class="row">
+        <h3><span id="dead"></span></h3>
+        </div>
+        <button type="button" id="feed-meal" class="btn btn-success">Feed Bear</button>
+        <button type="button" id="pause-game" class="btn btn-primary">Shoot Bear with tranquilizer dart: Pause Game</button>
+        <button type="button" id="wake-bear" class="btn btn-primary">Wake up Bear</button>
+      </div>
     </div>
+  </div>
   </body>
 </html>
