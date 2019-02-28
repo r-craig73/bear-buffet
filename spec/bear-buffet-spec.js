@@ -24,7 +24,7 @@ describe('HungryBear', function() {
 
   it('should get very hungry if the food level drops below zero', function() {
   fuzzy.foodLevel = 0;
-  expect(fuzzy.didYouGetEaten()).toEqual(true);
+  expect(fuzzy.didYouGetEaten()).toEqual(false);
   });
 
   it('should get very hungry if 10 seconds pass without feeding', function() {
