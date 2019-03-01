@@ -32,4 +32,4 @@
 
 ## MIT License
 
-#### Copyright (c) 2018-2019 _Ron Craig
+#### Copyright (c) 2018-2019 _Ron Craig_
