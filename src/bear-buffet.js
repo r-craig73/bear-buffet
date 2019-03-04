@@ -38,7 +38,7 @@ export class HungryBear {
   refreshPage() {
     setInterval(() => {
       this.displayResults();
-    }, 1000)
+    }, 500)
   }
 
   // pauseGame() {
