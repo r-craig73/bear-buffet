@@ -8,13 +8,14 @@
 
 ## Application Setup
 * Clone the repository.
-* In the home directory, install webpack and npm `$ npm install`.
+* In the home directory, install web-packs and npm `$ npm install`.
 
 ## Running the application
+### Option 1
 * In the home directory, build the code by running `$ npm run build`.
 * Open `bear-buffet/dist/index.html` in a Chrome browser to run the application.
-* Or...
-* In the home directory, run `$ npm run start`.  Webpack will automatically start a development server in a web browser at http://localhost:8080/. Updates in the application will be saved instantly.
+### Option 2
+* In the home directory, run `$ npm run start`.  Web-pack will automatically start a development server in a web browser at http://localhost:8080/. Updates in the application will be saved instantly.
 
 ## Testing setup
 * Clone the repository.
@@ -26,7 +27,7 @@
 
 ## Technologies Used
 * JavaScript
-* Webpack and npm
+* Web-pack and npm
 * Jasmine
 * Karma
 
