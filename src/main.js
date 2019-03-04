@@ -23,11 +23,11 @@ $(document).ready(function() {
     bear.refreshPage();
    });
 
-  $("#pause-game").click(function() {
+  // $("#pause-game").click(function() {
+  //   bear.pauseGame();
+  // });
 
-  });
-
-  $("#wake-bear").click(function() {
-   });
+  // $("#wake-bear").click(function() {
+  //  });
  });
 });

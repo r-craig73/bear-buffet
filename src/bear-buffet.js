@@ -41,10 +41,14 @@ export class HungryBear {
     }, 500)
   }
 
-  // pauseGame() {
-  //   setTimeout(() => {
-  //     this.displayResults();
-  //   }, 25000);
+  // sleep(ms) {
+  //   return new Promise(resolve => setTimeout(resolve, ms));
+  // }
+  
+  // async pauseGame() {
+  //   this.foodLevel;
+  //   await this.sleep(5000);
+  //   console.log('Five seconds later');
   // }
 
 }
